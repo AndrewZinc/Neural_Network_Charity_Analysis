@@ -78,7 +78,7 @@ Here are the collected results from these attempts:
                 hidden_nodes_layer3 = 6
                 Loss: 0.5917598605155945, Accuracy: 0.7071720361709595
                 ------------------------------------
-                (Maximize bin size / Change to tanh / add bins to affiliation, org, and use_case columns
+                (Maximize bin size / Change to tanh / add bins to affiliation, org, and use_case columns)
                 hidden_nodes_layer1 = 15 
                 hidden_nodes_layer2 = 15
                 hidden_nodes_layer3 = 15
@@ -101,13 +101,13 @@ Here are the collected results from these attempts:
                 hidden_nodes_layer3 = 4
                 Loss: 0.5896307229995728, Accuracy: 0.7061224579811096
                 ------------------------------------
-                (change to optimizer='Adadelta'  (very fast!)
+                (change to optimizer='Adadelta' - very fast!)
                 hidden_nodes_layer1 = 10
                 hidden_nodes_layer2 = 8
                 hidden_nodes_layer3 = 4
                 Loss: 0.6488712430000305, Accuracy: 0.6853644251823425
                 ------------------------------------
-                (increase number of epochs -> 500
+                (increase number of epochs -> 500)
                 hidden_nodes_layer1 = 10
                 hidden_nodes_layer2 = 8
                 hidden_nodes_layer3 = 4
@@ -149,7 +149,7 @@ Here are the collected results from these attempts:
                 hidden_nodes_layer7 = 10
                 hidden_nodes_layer8 = 10
                 ------------------------------------
-                (mixed up the activation functions) selu, selu, relu, relu, gelu, gelu, tanh, tanh
+                (mixed up the activation functions- selu, selu, relu, relu, gelu, gelu, tanh, tanh)
                 hidden_nodes_layer1 = 10
                 hidden_nodes_layer2 = 10
                 hidden_nodes_layer3 = 10
@@ -193,7 +193,7 @@ Binning was again modified to attempt to balance more of the data into two main 
 
 The binning within the AFFILIATION and CLASSIFICATION columns seemed succesful in equalizing the dominant category values.
 
-Finally, the model was updated to include a fourth hidden layer, and to use the `swish` activation function within the hidden layers. (The `swish` activation function has similar characteristics to the `relu` function, but operates at a higher performance.
+Finally, the model was updated to include a fourth hidden layer, and to use the `swish` activation function within the hidden layers. (The `swish` activation function has similar characteristics to the `relu` function, but operates at a higher performance.)
 
 This model was run for 200 training epochs, again for both 16 and 32 units per hidden layer.
 
